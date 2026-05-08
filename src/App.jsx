@@ -49,15 +49,15 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-cyan-50 via-white to-blue-50 text-black font-sans scroll-smooth">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-black to-slate-900 text-white font-sans scroll-smooth">
       {/* Navbar */}
-      <nav className="fixed top-0 w-full z-50 backdrop-blur-lg bg-white/80 border-b border-cyan-100 shadow-sm">
+      <nav className="fixed top-0 w-full z-50 backdrop-blur-lg bg-black/70 border-b border-cyan-500/10">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold tracking-wide text-cyan-400">
             Dhanya Sri
           </h1>
 
-          <div className="hidden md:flex gap-8 text-sm text-gray-700">
+          <div className="hidden md:flex gap-8 text-sm text-gray-300">
             <a href="#about" className="hover:text-cyan-400 transition">About</a>
             <a href="#projects" className="hover:text-cyan-400 transition">Projects</a>
             <a href="#research" className="hover:text-cyan-400 transition">Research</a>
@@ -78,10 +78,10 @@ export default function Portfolio() {
 
           <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6">
             Building Scalable
-            <span className="block text-cyan-500">Software Solutions</span>
+            <span className="block text-cyan-400">Software Solutions</span>
           </h1>
 
-          <p className="text-gray-700 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+          <p className="text-gray-300 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
             Computer Science Engineering student focused on Java development, data structures, problem solving, software engineering, and research-driven innovation.
           </p>
 
@@ -89,7 +89,7 @@ export default function Portfolio() {
             <a
               href="https://github.com/Dhanya13005"
               target="_blank"
-              className="px-6 py-3 rounded-2xl bg-cyan-500 text-black font-semibold hover:scale-105 transition"
+              className="px-6 py-3 rounded-2xl bg-cyan-500 text-white font-semibold hover:scale-105 transition"
             >
               GitHub
             </a>
@@ -97,7 +97,7 @@ export default function Portfolio() {
             <a
               href="https://linkedin.com/in/dhanya-sri-ganpisetti-b08bb42a6"
               target="_blank"
-              className="px-6 py-3 rounded-2xl border border-cyan-400 text-cyan-300 hover:bg-cyan-400 hover:text-black transition"
+              className="px-6 py-3 rounded-2xl border border-cyan-400 text-cyan-300 hover:bg-cyan-400 hover:text-white transition"
             >
               LinkedIn
             </a>
@@ -105,7 +105,7 @@ export default function Portfolio() {
             <a
               href="/resume.pdf"
               target="_blank"
-              className="px-6 py-3 rounded-2xl border border-cyan-400 text-cyan-600 hover:bg-cyan-500 hover:text-black transition"
+              className="px-6 py-3 rounded-2xl border border-cyan-400 text-cyan-600 hover:bg-cyan-400 hover:text-black transition"
             >
               Resume
             </a>
@@ -125,14 +125,14 @@ export default function Portfolio() {
               Passionate About AI, Robotics & Automation
             </h2>
 
-            <p className="text-gray-700 leading-relaxed mb-5">
+            <p className="text-gray-300 leading-relaxed mb-5">
               I am Dhanya Sri Ganpisetti, a B.Tech Computer Science Engineering
               student at KL University with strong interests in AI-integrated
               systems, robotics, cloud technologies, and scalable software
               development.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed">
               My work combines software engineering principles with innovative
               research to create intelligent systems capable of solving
               real-world challenges efficiently.
@@ -152,7 +152,7 @@ export default function Portfolio() {
             ].map((skill) => (
               <div
                 key={skill}
-                className="bg-white/5 border border-cyan-100 rounded-3xl p-6 text-center hover:border-cyan-400 transition"
+                className="bg-white/5 border border-cyan-500/10 rounded-3xl p-6 text-center hover:border-cyan-400 transition"
               >
                 <p className="font-semibold text-lg">{skill}</p>
               </div>
@@ -164,7 +164,7 @@ export default function Portfolio() {
       {/* Projects */}
       <section
         id="projects"
-        className="bg-white/[0.03] border-y border-cyan-100 py-24 px-6"
+        className="bg-white/[0.03] border-y border-cyan-500/10 py-24 px-6"
       >
         <div className="max-w-6xl mx-auto">
           <div className="mb-14 text-center">
@@ -181,13 +181,13 @@ export default function Portfolio() {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="bg-white shadow-md border border-cyan-100 rounded-3xl p-8 hover:border-cyan-400 hover:-translate-y-1 transition duration-300"
+                className="bg-white/5 backdrop-blur-md border border-cyan-500/10 rounded-3xl p-8 hover:border-cyan-400 hover:-translate-y-1 transition duration-300"
               >
                 <h3 className="text-2xl font-bold mb-4 text-cyan-300">
                   {project.title}
                 </h3>
 
-                <p className="text-gray-700 leading-relaxed mb-6">
+                <p className="text-gray-300 leading-relaxed mb-6">
                   {project.description}
                 </p>
 
@@ -197,7 +197,7 @@ export default function Portfolio() {
                   <a
                     href={project.github}
                     target="_blank"
-                    className="inline-block px-5 py-2 rounded-xl bg-cyan-500 text-black font-medium hover:scale-105 transition"
+                    className="inline-block px-5 py-2 rounded-xl bg-cyan-500 text-white font-medium hover:scale-105 transition"
                   >
                     View Project
                   </a>
@@ -226,7 +226,7 @@ export default function Portfolio() {
             Water Surface Purification: A Comprehensive Survey
           </h3>
 
-          <p className="text-gray-700 leading-relaxed mb-6">
+          <p className="text-gray-300 leading-relaxed mb-6">
             This research explores AI-integrated and energy-optimized robotic
             systems designed for autonomous water surface purification. The
             survey focuses on intelligent navigation, pollutant detection,
@@ -234,17 +234,17 @@ export default function Portfolio() {
             renewable energy integration for sustainable robotic operations.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-6 text-gray-600 text-sm">
+          <div className="grid md:grid-cols-2 gap-6 text-gray-400 text-sm">
             <div>
-              <p><span className="text-black font-semibold">Journal:</span> IJIRCCE</p>
-              <p><span className="text-black font-semibold">Volume:</span> 13, Issue 11</p>
-              <p><span className="text-black font-semibold">Year:</span> 2025</p>
+              <p><span className="text-white font-semibold">Journal:</span> IJIRCCE</p>
+              <p><span className="text-white font-semibold">Volume:</span> 13, Issue 11</p>
+              <p><span className="text-white font-semibold">Year:</span> 2025</p>
             </div>
 
             <div>
-              <p><span className="text-black font-semibold">DOI:</span> 10.15680/IJIRCCE.2025.1311081</p>
-              <p><span className="text-black font-semibold">Status:</span> Scopus Submitted</p>
-              <p><span className="text-black font-semibold">Authors:</span> Dhanya Sri et al.</p>
+              <p><span className="text-white font-semibold">DOI:</span> 10.15680/IJIRCCE.2025.1311081</p>
+              <p><span className="text-white font-semibold">Status:</span> Scopus Submitted</p>
+              <p><span className="text-white font-semibold">Authors:</span> Dhanya Sri et al.</p>
             </div>
           </div>
         </div>
@@ -253,7 +253,7 @@ export default function Portfolio() {
       {/* Certifications */}
       <section
         id="certifications"
-        className="bg-white/[0.03] border-y border-cyan-100 py-24 px-6"
+        className="bg-white/[0.03] border-y border-cyan-500/10 py-24 px-6"
       >
         <div className="max-w-6xl mx-auto">
           <div className="mb-14 text-center">
@@ -270,13 +270,13 @@ export default function Portfolio() {
             {certifications.map((cert, index) => (
               <div
                 key={index}
-                className="bg-white shadow-md border border-cyan-100 rounded-3xl p-8 hover:border-cyan-400 transition"
+                className="bg-white/5 backdrop-blur-md border border-cyan-500/10 rounded-3xl p-8 hover:border-cyan-400 transition"
               >
                 <h3 className="text-xl font-bold mb-4 text-cyan-300">
                   {cert.title}
                 </h3>
 
-                <p className="text-gray-700 leading-relaxed mb-6 text-sm">
+                <p className="text-gray-300 leading-relaxed mb-6 text-sm">
                   {cert.description}
                 </p>
 
@@ -303,14 +303,14 @@ export default function Portfolio() {
           Let’s Build Something Innovative 🚀
         </h2>
 
-        <p className="text-gray-700 text-lg mb-10">
+        <p className="text-gray-300 text-lg mb-10">
           Interested in AI, automation, robotics, or software engineering collaborations?
         </p>
 
         <div className="flex flex-wrap justify-center gap-5 text-lg">
           <a
             href="mailto:dhanya.gs13@gmail.com"
-            className="px-6 py-3 rounded-2xl bg-cyan-500 text-black font-semibold hover:scale-105 transition"
+            className="px-6 py-3 rounded-2xl bg-cyan-500 text-white font-semibold hover:scale-105 transition"
           >
             Email Me
           </a>
@@ -318,7 +318,7 @@ export default function Portfolio() {
           <a
             href="https://github.com/Dhanya13005"
             target="_blank"
-            className="px-6 py-3 rounded-2xl border border-white/20 hover:bg-white hover:text-black transition"
+            className="px-6 py-3 rounded-2xl border border-white/20 hover:bg-white hover:text-white transition"
           >
             GitHub
           </a>
@@ -326,7 +326,7 @@ export default function Portfolio() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-cyan-100 py-8 text-center text-gray-500 text-sm">
+      <footer className="border-t border-cyan-500/10 py-8 text-center text-gray-500 text-sm">
         © 2026 Dhanya Sri Ganpisetti • dhanya.arade.app
       </footer>
     </div>
